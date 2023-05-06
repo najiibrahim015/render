@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     res.send('hi all')
 })
 
+app.get('/data',(req,res)=>{
+    var data=['Naji','Johnny','Charbel']
+    res.send(data)
+})
 
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
